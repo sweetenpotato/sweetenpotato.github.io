@@ -1,0 +1,47 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+}
+
+@keyframes blink {
+    50% {
+        border-right: 1px solid black;
+    }
+}
+
+@keyframes type-desc-fadein {
+    0% {
+        font-size: 0px;
+    }
+    80% {
+        font-size: 0px;
+    }
+    100% {
+        font-size: 24px;
+    }
+}
+
+#type-container {
+    font-family: monospace;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#type-title {
+    display: inline;
+    border-right: 0px;
+
+    animation: blink .8s step-end 5;
+}
+#type-desc{
+    display: inline;
+    border-right: 0px;
+    
+    animation: blink .8s step-end 5;
+}
